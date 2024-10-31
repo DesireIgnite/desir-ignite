@@ -1,0 +1,153 @@
+/* Import the Anton font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Container for About Us section */
+.about-us {
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem 10rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    box-shadow: 0px 15px 35px rgba(100, 100, 100, 0.6), 0px 8px 12px rgba(0, 0, 0, 0.5); /* Enhanced grayish shadow effect */
+    border-radius: 14px;
+    margin: 2.5rem auto;
+    max-width: 95%; /* Wider container for desktop */
+    width: 100%;
+}
+
+/* Styling for the image */
+.about-us-image {
+    max-width: 240px; /* Increased size for desktop */
+    margin-right: 6rem;
+    margin-top: -1.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+/* Styling for the text container */
+.about-us-box {
+    max-width: 600px;
+    padding-left: 4rem;
+}
+
+/* Title styling */
+.about-us-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff3e3e;
+    margin-bottom: 1rem;
+}
+
+/* Description styling */
+.about-us-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+/* Stats container styling */
+.about-us-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/* Each stat item styling */
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff3e3e;
+    margin-bottom: 0.3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.about-us-stats h2 {
+    color: #B0BEC5;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem;
+        margin: 1.5rem auto;
+        max-width: 90%; /* Increased width on mobile for readability */
+        box-shadow: 0px 12px 30px rgba(100, 100, 100, 0.5), 0px 5px 10px rgba(0, 0, 0, 0.4); /* Softer grayish shadow */
+    }
+
+    .about-us-image {
+        max-width: 180px; /* Maintain size for mobile */
+        margin: 0 0 1.5rem 0;
+    }
+
+    .about-us-box {
+        margin: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-us-title {
+        font-size: 1.5rem;
+    }
+
+    .about-us-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .about-us-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Responsive adjustments for iPad screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-us {
+        flex-direction: row;
+        padding: 3rem 6rem; /* Reduced padding for better fit */
+    }
+
+    .about-us-image {
+        max-width: 220px; /* Slightly decrease image size */
+        margin-right: 4rem; /* Adjust margin for spacing */
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .about-us-box {
+        max-width: 500px; /* Reduce max-width for better fit */
+        padding-left: 2rem; /* Reduce padding on the left */
+    }
+
+    .about-us-title {
+        font-size: 1.8rem; /* Slightly smaller title for better balance */
+        margin-bottom: 0.5rem; /* Less margin below the title */
+    }
+
+    .about-us-description {
+        font-size: 1.15rem; /* Adjust font size for readability */
+        line-height: 1.5; /* Adjust line height */
+    }
+
+    .about-us-stats {
+        gap: 2rem; /* Adjust gap between stats */
+    }
+
+    .stat-number {
+        font-size: 2.2rem; /* Slightly smaller font size for stats */
+    }
+}

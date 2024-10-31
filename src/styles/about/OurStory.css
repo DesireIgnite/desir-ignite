@@ -1,0 +1,73 @@
+.our-story {
+    position: relative;
+    padding: 4rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.our-story::before {
+    content: '“';
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 15rem;
+    color: rgba(148, 148, 148, 0.5);
+    z-index: 1;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.story-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #ff4b4b; /* Red accent border on the left */
+}
+
+.story-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.7); 
+}
+
+.story-content h3 {
+    font-size: 2rem;
+    color: #ff4b4b; /* Red accent for the title */
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .our-story {
+        padding: 2rem 1rem;
+    }
+
+    .our-story::before {
+        font-size: 10rem;
+        top: 5%;
+        left: 8%; /* Move " sign further inside on mobile */
+    }
+
+    .story-content {
+        border-left: none; /* Remove red border on mobile */
+    }
+
+    .story-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .story-content p {
+        font-size: 1rem;
+    }
+}

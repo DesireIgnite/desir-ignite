@@ -1,0 +1,40 @@
+/* Importing Anton font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.stats-section {
+    padding: 3rem 0;
+    background-color: #000000;
+}
+
+.stats-box {
+    text-align: center;
+    margin-top: 0.01rem; /* Significantly reduced margin above the stats box */
+}
+
+/* Applying Anton font to labels only */
+.anton-font {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem !important; /* Further decreased font size for desktop */
+    color: #ff3e3e;
+}
+
+/* Styles for description text */
+.description-text {
+    color: #B0BEC5;
+    font-size: 1.15rem !important; /* Further decreased description font size for desktop */
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .stats-box {
+        margin-top: 0.1rem; /* Further reduced margin above the stats box for mobile */
+    }
+
+    .anton-font {
+        font-size: 2.25rem !important; /* Further decreased size for mobile */
+    }
+
+    .description-text {
+        font-size: 0.9rem !important; /* Further decreased size for mobile */
+    }
+}

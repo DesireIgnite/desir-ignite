@@ -1,0 +1,57 @@
+.about-us-section {
+    padding: 4rem 2rem; /* Outer padding for the section */
+    background-color: #000; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text alignment */
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    margin: 1.5rem 0; /* Adjusted margin for spacing */
+    color: #e0e0e0; /* Color of the heading */
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); /* Text shadow effect */
+    border-bottom: 3px solid #ff4b4b; /* Red accent line under the title */
+    display: inline-block; /* Inline-block for the border */
+    padding: 0.5rem 1rem; /* Padding around the heading for spacing */
+}
+
+.about-us-section p {
+    font-size: 1.1rem; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    color: #ccc; /* Paragraph text color */
+    margin: 1rem auto; /* Center margin for paragraphs */
+    padding: 0.5rem 1rem; /* Padding around paragraphs */
+    max-width: 800px; /* Optional: Set a max width for paragraphs for better readability */
+}
+
+.digital-signoff {
+    font-weight: bold; /* Bold text */
+    font-style: italic; /* Italic style */
+    color: #ff4b4b; /* Red accent for the sign-off text */
+    margin: 1.5rem auto; /* Center margin for sign-off */
+    padding: 0.5rem 1rem; /* Padding around sign-off text */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 2rem 1rem; /* Reduced outer padding for mobile */
+    }
+
+    .about-us-section h2 {
+        font-size: 2rem; /* Smaller heading size for mobile */
+        margin: 1.5rem 0; /* Maintain margin for heading */
+        padding: 0.5rem 1rem; /* Maintain padding around heading */
+    }
+
+    .about-us-section p {
+        font-size: 1rem; /* Smaller paragraph font size for mobile */
+        margin: 1rem auto; /* Maintain centered margin for paragraphs */
+        padding: 0.5rem 1rem; /* Maintain padding around paragraphs */
+    }
+
+    .digital-signoff {
+        margin: 1.5rem auto; /* Maintain centered margin for sign-off */
+        padding: 0.5rem 1rem; /* Maintain padding around sign-off */
+    }
+}

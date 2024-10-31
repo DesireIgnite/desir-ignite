@@ -1,0 +1,147 @@
+/* Base Styling */
+.footer {
+    background-color: #111;
+    color: #B0BEC5; /* Original color for footer text */
+    text-align: center;
+    width: 100%; /* Ensures full width */
+    padding: 8rem 0; /* Increased padding for more height */
+    box-sizing: border-box; /* Include padding in width calculation */
+    min-height: 200px; /* Minimum height to ensure visible footer space */
+}
+
+/* Desktop Version - Expanded Layout */
+@media (min-width: 769px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Aligns items properly */
+        gap: 2rem; /* Larger gaps for desktop */
+        width: 100%; /* Use full width */
+        margin: 0; /* Remove auto margin for full width */
+    }
+
+    .footer-section {
+        flex: 1 1 200px;
+        min-width: 150px;
+        padding: 1rem;
+        text-align: center; /* Center text for better alignment */
+    }
+
+    .footer-title {
+        color: #FF5252; /* Title color */
+        margin-bottom: 2rem; 
+        padding-bottom: 1rem;/* Space below title */
+        font-size: 1.4rem; /* Increased font size for desktop */
+        line-height: 1.5; /* Increased line height */
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        display: flex; /* Display links horizontally */
+        justify-content: center; /* Center the links */
+        gap: 2rem; /* Space between links */
+    }
+
+    .footer-links li {
+        margin: 0; /* No margin for list items */
+    }
+
+    .footer-links a {
+        color: #B0BEC5; /* Greyish color for links */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #FF8A80; /* Color on hover */
+    }
+
+    .highlight {
+        color: #B0BEC5; /* Highlight color */
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center; /* Centering the social icons */
+        gap: 1rem; /* More space between icons on desktop */
+        margin-top: 1rem;
+    }
+
+    .footer-socials a {
+        color: #B0BEC5; /* Greyish color for social links */
+        transition: color 0.3s;
+    }
+
+    .footer-socials a:hover {
+        color: #FF5252; /* Hover color for social icons */
+    }
+
+    .footer-bottom {
+        margin-top: 2rem;
+        font-size: 1rem; /* Increased font size for desktop */
+        color: #B0BEC5; /* Footer bottom color */
+        line-height: 1.5; /* Increased line height */
+    }
+}
+
+/* Mobile Version - Compact Layout */
+@media (max-width: 768px) {
+    .footer {
+        padding: 4rem 1rem; /* Increased padding for more height on mobile */
+        min-height: 200px; /* Minimum height to ensure visible footer space on mobile */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Increased gap for compact design */
+        width: 100%; /* Use full width for mobile as well */
+    }
+
+    .footer-section {
+        margin: 0;
+        text-align: center;
+        padding: 0.5rem 0; /* Increased padding for each section */
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        color: #FF5252; /* Title color */
+        margin-bottom: 0.5rem; /* Small space below title */
+        line-height: 1.5; /* Increased line height */
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Display links horizontally on mobile */
+        justify-content: center; /* Center the links */
+        gap: 1rem; /* Space between links */
+    }
+
+    .footer-links a {
+        color: #B0BEC5; /* Greyish color for mobile links */
+        text-decoration: none;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center; /* Centering the social icons */
+        gap: 0.3rem; /* Minimal space between icons */
+        margin-top: 0.3rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.75rem; /* Small font size */
+        margin-top: 0.3rem; /* Minimal space at the bottom */
+        line-height: 1.5; /* Increased line height */
+    }
+}
+
+/* Hiding the Instagram widget */
+.instagram-widget {
+    display: none; /* Hides the Instagram widget */
+}

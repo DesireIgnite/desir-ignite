@@ -1,0 +1,125 @@
+/* General Styling */
+.testimonials-section {
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    padding: 6rem 2rem;
+    background-color: #1E1E1E;
+    max-width: 800px;
+    margin: 3rem auto;
+    border-radius: 32px; /* Increased border-radius for more roundness */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+/* Title Styling */
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #FF3E3E;
+    margin-bottom: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+/* Testimonials Carousel Styling */
+.testimonials-carousel {
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Testimonial Slide Styling */
+.testimonial-slide p {
+    color: #E0E0E0;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 90%;
+    margin: auto;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Background Grid Pattern */
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Control Dots Container */
+.control-dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; /* Space between carousel and dots */
+}
+
+/* Dots Styling */
+.control-dots {
+    display: flex !important;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.control-dots .dot {
+    background: #B0BEC5;
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.control-dots .dot.selected {
+    background: #FF3E3E;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Desktop - Rectangular container */
+@media (min-width: 768px) {
+    .testimonials-section {
+        max-width: 900px;
+        border-radius: 32px; /* Increased border-radius for desktop */
+        padding: 4rem 3rem;
+    }
+}
+
+/* Mobile - Compact styling */
+@media (max-width: 767px) {
+    .testimonials-section {
+        padding: 2rem 1rem;
+        border-radius: 24px; /* Increased border-radius for mobile */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    }
+    
+    .testimonial-slide p {
+        font-size: 1rem;
+        padding: 1.5rem;
+        line-height: 1.4;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .control-dots .dot {
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
+    }
+}

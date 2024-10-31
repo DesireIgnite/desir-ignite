@@ -1,0 +1,131 @@
+/* src/styles/contact/Contact.css */
+body {
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Use Arial font */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 0 10px; /* Add some padding to the sides */
+}
+
+.container {
+    max-width: 800px; /* Max width of the container */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside the container */
+    background-color: #111; /* Dark background for the container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+    position: relative; /* Position relative for inner elements */
+    box-shadow: 0 4px 20px rgba(88, 88, 88, 0.8); /* Add shadow to the container */
+    margin: 2rem auto; /* Center the container with margin */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+/* Add this media query for mobile adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reduced padding for mobile */
+        margin: 1rem auto; /* Adjust margin for better spacing */
+        border-radius: 5px; /* Slightly smaller border radius */
+    }
+
+    .contact-header {
+        font-size: 1.8rem; /* Adjust font size for mobile */
+        margin-bottom: 15px; /* Reduced space below header */
+    }
+
+    .iframe-container {
+        height: 400px; /* Adjust height for iframe on mobile */
+        margin-bottom: 20px; /* Space below the iframe */
+        position: relative; /* Added position relative to allow absolute child positioning */
+        overflow: hidden; /* Hide overflow to prevent scrollbars */
+    }
+
+    /* Adjust the iframe to allow for branding hiding */
+    .google-form {
+        width: 100%; /* Full width of the container */
+        height: 100%; /* Ensure full height */
+        border: none; /* Remove border */
+    }
+
+    iframe {
+        position: absolute; /* Allow for absolute positioning */
+        top: -60px; /* Move the iframe up to hide more from the top */
+        left: 0; /* Position from the left */
+        right: 0; /* Position from the right */
+        bottom: -30px; /* Move the iframe down to hide more branding */
+        height: calc(100% + 90px); /* Increase height to cover hidden areas */
+        /* This change ensures that you cover more branding */
+    }
+
+    .contact-info {
+        margin-top: 15px; /* Space above contact info */
+        color: #bbb; /* Lighter color for contact info */
+        text-align: left; /* Align text to the left */
+        padding: 0 10px; /* Add padding for contact info */
+    }
+
+    .contact-info p {
+        margin: 5px 0; /* Space between contact info paragraphs */
+    }
+
+    .contact-info strong {
+        color: #fff; /* White color for strong text */
+    }
+}
+
+/* Styles for desktop remain unchanged */
+.contact-header {
+    font-size: 2rem; /* Font size for the header */
+    color: red; /* Color of the header */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.iframe-container {
+    position: relative; /* Position relative for overflow control */
+    overflow: hidden; /* Hide overflow from the iframe */
+    border-radius: 8px; /* Rounded corners for the iframe */
+    width: 100%; /* Full width */
+    height: 600px; /* Fixed height for the iframe */
+    margin-bottom: 20px; /* Space between iframe and contact info */
+}
+
+.google-form {
+    width: 100%; /* Full width of the container */
+    height: calc(100% + 100px); /* Increase height to allow for full visibility */
+    border: none; /* Remove border */
+}
+
+iframe {
+    position: absolute; /* Allow for absolute positioning */
+    top: -10px; /* Move the iframe up by 10 pixels to show more of the header */
+    left: 0; /* Position from the left */
+    right: 0; /* Position from the right */
+    bottom: -100px; /* Move the iframe down by 25 pixels to hide more branding */
+    height: calc(100% + 20px); /* Adjust height to cover branding */
+}
+
+.contact-info {
+    margin-top: 20px; /* Space above contact info */
+    color: #bbb; /* Lighter color for contact info */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Space between contact info paragraphs */
+}
+
+.contact-info strong {
+    color: #fff; /* White color for strong text */
+}
+
+/* Footer Styles (optional) */
+.footer {
+    background-color: #111; /* Dark background for the footer */
+    color: #bbb; /* Light grey color for footer text */
+    text-align: center; /* Center footer text */
+    padding: 1rem; /* Padding for footer */
+}

@@ -1,0 +1,105 @@
+/* Navbar styling */
+.navbar-toolbar {
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center;
+    padding: 0 1rem; /* Add some padding to the sides */
+}
+
+/* Centering desktop links */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center; /* Center the navbar links */
+    flex-grow: 1;
+    margin: 0; /* Remove margin for links */
+}
+
+/* Logo styling */
+.navbar-logo {
+    height: 80px; /* Height for mobile */
+}
+
+/* Increase logo size for desktop */
+@media (min-width: 769px) {
+    .navbar-logo {
+        height: 120px !important; /* Height for desktop */
+    }
+}
+
+.navbar-title {
+    font-weight: bold;
+    margin-left: 10px; /* Adjust margin for title */
+}
+
+/* Default button color */
+.navbar-links .MuiButton-root,
+.navbar-menu-icon {
+    color: white; /* Default color */
+}
+
+/* Active link style */
+.navbar-links .navbar-link.active .MuiButton-root {
+    color: red; /* Highlight color for the active page */
+    font-weight: bold; /* Make the active link bold */
+}
+
+/* Dropdown menu styling */
+.MuiMenu-paper {
+    background-color: black !important; /* Ensure dropdown background is black */
+    color: white !important; /* Ensure text color is white */
+}
+
+/* Dropdown item styling */
+.MuiMenuItem-root {
+    color: white !important; /* Ensure dropdown item text color is white */
+}
+
+/* Dropdown item hover effect */
+.MuiMenuItem-root:hover {
+    color: red !important; /* Text color on hover */
+    background-color: transparent !important; /* Keep background transparent on hover */
+}
+
+/* Button hover effect */
+.navbar-links .MuiButton-root:hover {
+    color: red; /* Text color on hover */
+    background-color: transparent; /* Keep background transparent on hover */
+}
+
+/* Portfolio button styling */
+.portfolio-button {
+    color: white; /* Default color for Portfolio button */
+}
+
+/* Prevent Portfolio button from changing color on hover for both mobile and desktop */
+.portfolio-button:hover {
+    color: white !important; /* Keep it white on hover */
+    background-color: transparent !important; /* Keep background transparent */
+}
+
+/* Hide menu icon on larger screens */
+.navbar-menu-icon {
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links on mobile */
+    }
+
+    .navbar-menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+
+    /* Ensuring dropdown styles for mobile */
+    .MuiMenu-paper {
+        background-color: black !important; /* Ensure dropdown background is black on mobile */
+        color: white !important; /* Ensure dropdown text is white */
+    }
+
+    .MuiMenuItem-root {
+        color: white !important; /* Ensure dropdown item text color is white */
+    }
+}
