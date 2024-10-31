@@ -13,13 +13,16 @@ const Navbar = () => {
     const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
     const handleMenuClose = () => setAnchorEl(null);
 
+    // Use the direct Postimg link for the logo
+    const logoImageUrl = 'https://i.postimg.cc/CZBpzMcZ/logo.png'; // Replace with the direct link to the image
+
     return (
         <AppBar position="static" color="primary">
             <Toolbar className="navbar-toolbar">
                 {/* Make the logo clickable to go to the home page */}
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                     <img 
-                        src={`${process.env.PUBLIC_URL}/logo.png`} 
+                        src={logoImageUrl} // Use the direct image URL
                         alt="Digital Ignite" 
                         className="navbar-logo" 
                     />
