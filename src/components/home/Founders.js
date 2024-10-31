@@ -3,9 +3,9 @@ import { Grid, Typography, Container, Box } from '@mui/material';
 import '../../styles/home/Founders.css';
 
 const founders = [
-    { name: "Kanika & Angad", title: "COSIQ", image: `${process.env.PUBLIC_URL}/assets/cosiq-founders.png` }, // Updated path
-    { name: "Gopala Krishnan", title: "Inditech Technology Services Private Limited", image: `${process.env.PUBLIC_URL}/assets/gopal.png` }, // Updated path
-    { name: "Rajan Makkar", title: "Ray Skill & Management Institute", image: `${process.env.PUBLIC_URL}/assets/rajan.png` }, // Updated path
+    { name: "Kanika & Angad", title: "COSIQ", image: 'https://i.ibb.co/2FTv81j/cosiq-founders.png' }, // Hosted image link
+    { name: "Gopala Krishnan", title: "Inditech Technology Services Private Limited", image: 'https://i.ibb.co/YX0YH57/gopal.png' }, // Hosted image link
+    { name: "Rajan Makkar", title: "Ray Skill & Management Institute", image: 'https://i.ibb.co/mNMPJvD/rajan.png' }, // Hosted image link
 ];
 
 const Founders = () => {
@@ -25,7 +25,7 @@ const Founders = () => {
                     <Grid item xs={12} sm={4} key={index}>
                         <Box className="founder-box" textAlign="center">
                             <img
-                                src={founder.image} // Use the updated image property
+                                src={founder.image} // Use hosted image link
                                 alt={`${founder.name}`}
                                 className="founder-image"
                             />

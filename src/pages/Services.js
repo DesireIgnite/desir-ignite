@@ -12,7 +12,7 @@ const services = [
             "Optimizing every byte for speed and reliability.",
             "Robust security and performance optimization to ensure exceptional user satisfaction"
         ],
-        image: `${process.env.PUBLIC_URL}/assets/services/1.png` // Updated path
+        image: `https://i.ibb.co/r3b5ydw/1.png` // Updated path
     },
     {
         title: "Branding",
@@ -22,7 +22,7 @@ const services = [
             "Storytelling workshops to collaboratively craft your brand narrative and messaging",
             "Vivid visual identity creation that embodies your brand's essence and resonates with your audience."
         ],
-        image: `${process.env.PUBLIC_URL}/assets/services/2.png` // Updated path
+        image: `https://i.ibb.co/ry2PY3t/2.png` // Updated path
     },
     {
         title: "Digital Marketing",
@@ -31,7 +31,7 @@ const services = [
             "Content marketing that educates, entertains, and builds trust with your audience",
             "Social media management that sparks conversations and fosters community engagement"
         ],
-        image: `${process.env.PUBLIC_URL}/assets/services/3.png` // Updated path
+        image: `https://i.ibb.co/rwTnDx2/3.png` // Updated path
     },
     {
         title: "3D CGI Ads | Graphic Design | Video Editing",
@@ -40,7 +40,7 @@ const services = [
             "Esthetically pleasing design that aligns seamlessly with your brand identity",
             "Conversion-focused visuals that guide users towards desired actions",
         ],
-        image: `${process.env.PUBLIC_URL}/assets/services/4.png` // Updated path
+        image: `https://i.ibb.co/q1GZh0w/4.png` // Updated path
     },
     {
         title: "Architecture | Interior Design",
@@ -50,7 +50,7 @@ const services = [
             "Vastu-compliant home layouts",
             "Creating 3D renders with material updates"
         ],
-        image: `${process.env.PUBLIC_URL}/assets/services/5.png` // Updated path
+        image: `https://i.ibb.co/3YstHL4/5.png` // Updated path
     }
 ];
 

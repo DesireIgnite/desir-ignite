@@ -2,10 +2,13 @@ import React from 'react';
 import '../../styles/home/AboutUs.css';
 
 const AboutUs = () => {
+    // Use hosting link for the "About Us" image
+    const aboutUsImageUrl = 'https://i.ibb.co/p4gygLW/about-us.png';
+
     return (
         <div className="about-us">
             <img 
-                src={`${process.env.PUBLIC_URL}/assets/about-us.png`} // Updated path to use the public assets folder
+                src={aboutUsImageUrl}  // Fetch "About Us" image from hosting link
                 alt="About Us" 
                 className="about-us-image"
             />

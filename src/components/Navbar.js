@@ -12,11 +12,9 @@ const Navbar = () => {
     const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
     const handleMenuClose = () => setAnchorEl(null);
 
-    // Update logo path to use the public folder
-    const logoImageUrl = `${process.env.PUBLIC_URL}/assets/logo.png`; // Updated to public path
-
-    // Update portfolio path to use the public folder
-    const portfolio = `${process.env.PUBLIC_URL}/assets/portfolio.pdf`;
+    // Fetch logo from hosting link
+    const logoImageUrl = 'https://i.ibb.co/hgmQS7n/logo.png';
+    const portfolio = `${process.env.PUBLIC_URL}/assets/portfolio.pdf`; // Leave portfolio path as is
 
     return (
         <AppBar position="static" color="primary">
@@ -24,7 +22,7 @@ const Navbar = () => {
                 {/* Make the logo clickable to go to the home page */}
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                     <img 
-                        src={logoImageUrl} // Use the logo from public/assets
+                        src={logoImageUrl} // Use hosted logo image
                         alt="Digital Ignite" 
                         className="navbar-logo" 
                     />
