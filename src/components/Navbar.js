@@ -4,7 +4,6 @@ import { NavLink, Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useMediaQuery } from '@mui/material';
 import '../styles/Navbar.css';
-import portfolio from '../assets/portfolio.pdf'; // Import the portfolio file
 
 const Navbar = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -13,8 +12,11 @@ const Navbar = () => {
     const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
     const handleMenuClose = () => setAnchorEl(null);
 
-    // Use the direct Postimg link for the logo
-    const logoImageUrl = 'https://i.postimg.cc/CZBpzMcZ/logo.png'; // Replace with the direct link to the image
+    // Update logo path to use the public folder
+    const logoImageUrl = `${process.env.PUBLIC_URL}/assets/logo.png`; // Updated to public path
+
+    // Update portfolio path to use the public folder
+    const portfolio = `${process.env.PUBLIC_URL}/assets/portfolio.pdf`;
 
     return (
         <AppBar position="static" color="primary">
@@ -22,7 +24,7 @@ const Navbar = () => {
                 {/* Make the logo clickable to go to the home page */}
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                     <img 
-                        src={logoImageUrl} // Use the direct image URL
+                        src={logoImageUrl} // Use the logo from public/assets
                         alt="Digital Ignite" 
                         className="navbar-logo" 
                     />

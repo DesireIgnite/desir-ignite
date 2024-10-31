@@ -1,12 +1,11 @@
 import React from 'react';
-import aboutUsImage from '../../assets/about-us.png'; // Import the image
 import '../../styles/home/AboutUs.css';
 
 const AboutUs = () => {
     return (
         <div className="about-us">
             <img 
-                src={aboutUsImage} 
+                src={`${process.env.PUBLIC_URL}/assets/about-us.png`} // Updated path to use the public assets folder
                 alt="About Us" 
                 className="about-us-image"
             />

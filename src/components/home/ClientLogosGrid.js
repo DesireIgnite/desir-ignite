@@ -11,7 +11,7 @@ const ClientLogosGrid = () => {
                 {clientLogos.map((logo, index) => (
                     <Grid item xs={6} sm={4} md={3} lg={2} key={index} className="client-logo-box">
                         <img
-                            src={require(`../../assets/${logo}.png`)} // Dynamically require the image
+                            src={`${process.env.PUBLIC_URL}/assets/${logo}.png`} // Updated to use public path
                             alt={`Client logo ${logo}`}
                             className="client-logo"
                         />

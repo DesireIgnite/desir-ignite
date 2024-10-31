@@ -3,29 +3,29 @@ import { Grid, Typography, Container, Box } from '@mui/material';
 import '../../styles/home/Founders.css';
 
 const founders = [
-    { name: "Kanika & Angad", title: "COSIQ", image: require('../../assets/cosiq-founders.png') }, // First image
-    { name: "Gopala Krishnan", title: "Inditech Technology Services Private Limited", image: require('../../assets/gopal.png') }, // Same image for the second founder
-    { name: "Rajan Makkar", title: "Ray Skill & Management Institute", image: require('../../assets/rajan.png') }, // Same image for the third founder
+    { name: "Kanika & Angad", title: "COSIQ", image: `${process.env.PUBLIC_URL}/assets/cosiq-founders.png` }, // Updated path
+    { name: "Gopala Krishnan", title: "Inditech Technology Services Private Limited", image: `${process.env.PUBLIC_URL}/assets/gopal.png` }, // Updated path
+    { name: "Rajan Makkar", title: "Ray Skill & Management Institute", image: `${process.env.PUBLIC_URL}/assets/rajan.png` }, // Updated path
 ];
 
 const Founders = () => {
     return (
         <Container className="founders-section">
-     <Typography 
-    variant="h4" 
-    color="secondary" 
-    className="founders-title" 
-    style={{ marginBottom: '3rem', fontWeight: 'bold' }} // Make it bold
->
-    Renowned Clients and Brands
-</Typography>
+            <Typography 
+                variant="h4" 
+                color="secondary" 
+                className="founders-title" 
+                style={{ marginBottom: '3rem', fontWeight: 'bold' }} // Make it bold
+            >
+                Renowned Clients and Brands
+            </Typography>
 
             <Grid container spacing={4} justifyContent="center">
                 {founders.map((founder, index) => (
                     <Grid item xs={12} sm={4} key={index}>
                         <Box className="founder-box" textAlign="center">
                             <img
-                                src={founder.image} // Use the image property
+                                src={founder.image} // Use the updated image property
                                 alt={`${founder.name}`}
                                 className="founder-image"
                             />

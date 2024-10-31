@@ -3,13 +3,6 @@ import ServiceCard from '../components/services/ServiceCard';
 import TestimonialsCarousel from '../components/services/TestimonialsCarousel';
 import '../styles/services/Services.css';
 
-import image1 from '../assets/services/1.png';
-import image2 from '../assets/services/2.png';
-import image3 from '../assets/services/3.png';
-import image4 from '../assets/services/4.png';
-import image5 from '../assets/services/5.png';
-
-
 const services = [
     {
         title: "Technology",
@@ -19,7 +12,7 @@ const services = [
             "Optimizing every byte for speed and reliability.",
             "Robust security and performance optimization to ensure exceptional user satisfaction"
         ],
-        image: image1
+        image: `${process.env.PUBLIC_URL}/assets/services/1.png` // Updated path
     },
     {
         title: "Branding",
@@ -29,7 +22,7 @@ const services = [
             "Storytelling workshops to collaboratively craft your brand narrative and messaging",
             "Vivid visual identity creation that embodies your brand's essence and resonates with your audience."
         ],
-        image: image2
+        image: `${process.env.PUBLIC_URL}/assets/services/2.png` // Updated path
     },
     {
         title: "Digital Marketing",
@@ -38,26 +31,26 @@ const services = [
             "Content marketing that educates, entertains, and builds trust with your audience",
             "Social media management that sparks conversations and fosters community engagement"
         ],
-        image: image3
+        image: `${process.env.PUBLIC_URL}/assets/services/3.png` // Updated path
     },
     {
         title: "3D CGI Ads | Graphic Design | Video Editing",
         description: "Complete solutions for Graphic Designing and Video Editing.",
         approach: [
-            "esthetically pleasing design that aligns seamlessly with your brand identity",
+            "Esthetically pleasing design that aligns seamlessly with your brand identity",
             "Conversion-focused visuals that guide users towards desired actions",
         ],
-        image: image4
+        image: `${process.env.PUBLIC_URL}/assets/services/4.png` // Updated path
     },
     {
         title: "Architecture | Interior Design",
         description: "Architecture and Interior Design services in 2D and 3D rendered views.",
         approach: [
-            "Analyzing the area and client requirements and Giving plans accordingly",
+            "Analyzing the area and client requirements and giving plans accordingly",
             "Vastu-compliant home layouts",
             "Creating 3D renders with material updates"
         ],
-        image: image5
+        image: `${process.env.PUBLIC_URL}/assets/services/5.png` // Updated path
     }
 ];
 
