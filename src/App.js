@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './components/Theme';
 import Layout from './components/Layout';  // Import Layout component
@@ -19,6 +19,8 @@ const App = () => {
                         <Route path="/services" element={<Services />} />
                         <Route path="/about-us" element={<AboutUs />} />
                         <Route path="/contact" element={<Contact />} />
+                        {/* Redirect any unmatched routes to the Home page */}
+                        <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
                 </Layout>
             </Router>
