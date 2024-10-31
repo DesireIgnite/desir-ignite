@@ -3,7 +3,6 @@ import { AppBar, Toolbar, Button, IconButton, Menu, MenuItem } from '@mui/materi
 import { NavLink, Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useMediaQuery } from '@mui/material';
-import logo from '../assets/logo.png';
 import '../styles/Navbar.css';
 import portfolio from '../assets/portfolio.pdf'; // Import the portfolio file
 
@@ -19,7 +18,11 @@ const Navbar = () => {
             <Toolbar className="navbar-toolbar">
                 {/* Make the logo clickable to go to the home page */}
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                    <img src={logo} alt="Digital Ignite" className="navbar-logo" />
+                    <img 
+                        src={`${process.env.PUBLIC_URL}/logo.png`} 
+                        alt="Digital Ignite" 
+                        className="navbar-logo" 
+                    />
                 </Link>
 
                 <div className="navbar-links">
