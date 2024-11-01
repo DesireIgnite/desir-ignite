@@ -4,7 +4,7 @@
 .service-card {
     margin: 1rem;
     max-width: 320px;
-    height: 700px; /* Default height */
+    height: 700px; /* Default height for desktop */
     background-color: #1C1C1C !important;
     color: #FFFFFF;
     padding: 1.5rem;
@@ -24,7 +24,32 @@
 /* Adjust for mobile devices */
 @media (max-width: 768px) {
     .service-card {
-        height: 850px; /* Increased height for mobile view */
+        height: 750px; /* Decreased height for mobile */
+        padding: 1rem; /* Reduce padding for mobile */
+    }
+
+    .service-image-placeholder {
+        height: 180px; /* Reduced height for mobile */
+    }
+
+    .service-title {
+        font-size: 1.4rem !important; /* Slightly smaller for mobile */
+        margin-bottom: 0.8rem !important;
+    }
+
+    .service-description {
+        font-size: 1rem; /* Reduced font size for mobile */
+        margin-bottom: 0.8rem;
+    }
+
+    .service-approach {
+        font-size: 1.1rem; /* Adjust font size for mobile */
+        margin-bottom: 0.4rem;
+    }
+
+    .service-card ul {
+        font-size: 0.95rem; /* Slightly smaller for readability on mobile */
+        padding-left: 1rem;
     }
 }
 
