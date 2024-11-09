@@ -1,82 +1,12 @@
+<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maintenance Mode</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Background */
-    body {
-      background: radial-gradient(circle, #0d0d0d, #1a1a1a);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    /* Container */
-    .container {
-      text-align: center;
-      padding: 50px;
-      background: #2b2b2b;
-      border-radius: 15px;
-      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.9), 0px 0px 30px rgba(255, 255, 255, 0.15);
-      max-width: 700px;
-      width: 90%;
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Title with glow effect */
-    .title {
-      font-size: 2.8rem;
-      color: #ff4c4c;
-      margin-bottom: 15px;
-      text-shadow: 0 0 10px rgba(255, 76, 76, 0.7), 0 0 20px rgba(255, 76, 76, 0.5);
-      animation: slideInDown 1s ease-in-out;
-    }
-
-    /* Message */
-    .message {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-      line-height: 1.6;
-      animation: slideInUp 1s ease-in-out;
-    }
-
-    /* Keyframes for animations */
-    @keyframes slideInDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes slideInUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+  <title>Desir Ignite - Creative Digital Hub</title>
 </head>
 <body>
-
-  <!-- Maintenance Container -->
-  <div class="container">
-    <h1 class="title">We'll Be Back Soon</h1>
-    <p class="message">
-      Our website is currently undergoing scheduled maintenance to serve you better. Thank you for your patience, and we apologize for the inconvenience. Please check back shortly!
-    </p>
-  </div>
-
+  <div id="root"></div>
 </body>
 </html>
